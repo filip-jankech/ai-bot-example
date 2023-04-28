@@ -6,15 +6,19 @@
     <ChatWidget />
   </div>
 </template>
-<style scoped>
-  .page-content {
-    font-weight: bold;
-    font-size: 60px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
 <script setup lang="ts">
 </script>
+<style scoped>
+.page-content {
+  font-weight: bold;
+  font-size: 50px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  padding: 20px;
+}
+</style>
