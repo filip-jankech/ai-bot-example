@@ -4,10 +4,10 @@ import { companionAgent } from "~~/agents";
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
 
-  const { OPENAI_API_KEY } = useRuntimeConfig();
+  // const { OPENAI_API_KEY } = useRuntimeConfig();
 
   const configuration = new Configuration({
-    apiKey: OPENAI_API_KEY,
+    apiKey: process.env.NUXT_OPENAI_API_KEY,
   });
   const openai = new OpenAIApi(configuration);
 
