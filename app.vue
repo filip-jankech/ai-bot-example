@@ -1,6 +1,6 @@
 <template>
   <div class="page-content">
-    <h1>What's on your heart?</h1>
+    <h1>The only true wisdom is in knowing you know nothing.</h1>
   </div>
   <div class="max-w-full w-[900px] m-auto">
     <ChatWidget />

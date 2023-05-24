@@ -46,16 +46,16 @@ watch(
 </script>
 <template>
   <div class="fixed bottom-[10px] right-[10px]">
-    <button v-show="!open" @click="open = true" class="bg-blue-500 p-3 rounded">
+    <button v-show="!open" @click="open = true" class="bg-teal-600 p-3 rounded-lg">
       <IconChat class="h-8 w-8 text-white" />
     </button>
     <div
       v-if="open"
-      class="box bg-gray-300 dark:bg-gray-800 rounded chat-box overflow-hidden"
+      class="box bg-teal-100 dark:bg-teal-800 rounded-lg overflow-hidden max-w-sm sm:max-w-2xl sm:w-[800px]"
     >
       <!-- Header -->
       <header
-        class="dark:bg-gray-900 bg-gray-200 px-4 flex justify-between items-center"
+        class="dark:bg-teal-900 bg-teal-200 px-4 flex justify-between items-center"
       >
         What's on your heart?
         <button class="p-4 pr-0" @click="open = false">
@@ -127,8 +127,3 @@ watch(
     </div>
   </div>
 </template>
-<style scoped>
-  .chat-box {
-    max-width: 350px;
-  }
-</style>
